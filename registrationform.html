@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta charset="utf-8">
+ <title>Library</title>
+    <style>
+     .red {
+          color: red;
+          }
+    .rad    {
+            border-width: 2px;
+            border-style: solid;
+            border-color: blue;
+            }    
+    .checkb {
+            border-width: 2px;
+            border-style: solid;
+            border-color: black;
+            background-color: yellow;
+            }
+    .sel    {
+            color: green;
+            font-weight: bold;
+            }
+    .opt_r   {
+            color: red;
+            font-weight: normal;
+            }
+    .opt_b   {
+            color: blue;
+            font-weight: normal;
+            }
+    .gr{
+        background-color: lightgrey;
+    }
+     </style>
+ </head>
+<body>
+<h1 align="center"> <font color="red">БИБЛИОТЕКА</font></h1>    
+
+<hr>
+    <h2 align="left"> <font color="green"> <i>Регистрация</i></font></h1>
+
+ <form action="http://localhost/M14_yu/registrationsave.php" method="POST">
+    <p><b>Логин:</b></p>
+    <p><input 
+        type=text 
+        name=login
+        class="gr"      
+        onKeyPress="style.backgroundColor='lightgreen';"></p>
+    <p><b>Пароль:</strong></p>
+    <p><input 
+        type="password" 
+        name="pass1"
+        class="gr"      
+        onKeyPress="style.backgroundColor='lightgreen';"></p>
+    <p><input 
+        type="password" 
+        name="pass2"
+        class="gr"
+        onKeyPress="style.backgroundColor='lightgreen';"></p>
+    <p><b>Электронная почта:</strong></p>
+    <p><input 
+        name="email"
+        class="gr"
+        onKeyPress="style.backgroundColor='lightgreen';"></p> 
+    <p><b>Фамилия</strong></p>
+    <p><input 
+        type=text 
+        name=fn 
+        class="gr"      
+        onKeyPress="style.backgroundColor='lightgreen';"></p>
+    <p><b>Имя:</strong></p>
+    <p><input 
+        type=text 
+        name=n
+        class="gr"
+        onKeyPress="style.backgroundColor='lightgreen';"></p> 
+  <div class="rad">
+    <p><b>Пол:</b><br>
+   <input type="radio" name="sex" value="Male">Мужской<br>
+   <input type="radio" name="sex" value="Female">Женский<br>
+    </p>
+  </div>
+    <p><b>Дата рождения:</b></p>
+     <select name="Day" class="sel">
+        <option class="opt_r">1</option>
+        <option class="opt_b">2</option>
+        <option class="opt_r">3</option>
+        <option class="opt_b">4</option>
+        <option class="opt_r">5</option>
+        <option class="opt_b">6</option>
+        <option class="opt_r">7</option>
+        <option class="opt_b">8</option>
+        <option class="opt_r">9</option>
+        <option class="opt_b">10</option>
+        <option class="opt_r">11</option>
+        <option class="opt_b">12</option>
+        <option class="opt_r">13</option>
+        <option class="opt_b">14</option>
+        <option class="opt_r">15</option>
+        <option class="opt_b">16</option>
+        <option class="opt_r">17</option>
+        <option class="opt_b">18</option>
+        <option class="opt_r">19</option>
+        <option class="opt_b">20</option>
+        <option class="opt_r">21</option>
+        <option class="opt_b">22</option>
+        <option class="opt_r">23</option>
+        <option class="opt_b">24</option>
+        <option class="opt_r">25</option>
+        <option class="opt_b">26</option>
+        <option class="opt_r">27</option>
+        <option class="opt_b">28</option>
+        <option class="opt_r">29</option>
+        <option class="opt_b"  style='font-weight: bold'>30</option>
+        <option class="opt_r">31</option>
+      </select>
+      <select name="Month" class="sel">
+        <option value="January" class="opt_r">Январь</option>
+        <option value="February" class="opt_b">Февраль</option>
+        <option value="March" class="opt_r">Март</option>
+        <option value="April" class="opt_b">Апрель</option>
+        <option value="May" class="opt_r">Май</option>
+        <option value="June" class="opt_b">Июнь</option>
+        <option value="July" class="opt_r">Июль</option>
+        <option value="August" class="opt_b">Август</option>
+        <option value="September" class="opt_r">Сентябрь</option>
+        <option value="October" class="opt_b">Октябрь</option>
+        <option value="November" class="opt_r" style='font-weight: bold'>Ноябрь</option>
+        <option value="December" class="opt_b">Декабрь</option>  
+      </select>
+      <select name="Year" class="sel">
+        <option class="opt_r">1930</option>
+        <option class="opt_b">1931</option>
+        <option class="opt_r">1932</option>
+        <option class="opt_b">1933</option>
+        <option class="opt_r">1934</option>
+        <option class="opt_b">1935</option>
+        <option class="opt_r">1936</option>
+        <option class="opt_b">1937</option>
+        <option class="opt_r">1938</option>
+        <option class="opt_b">1939</option>
+        <option class="opt_r">1940</option>
+        <option class="opt_b">1941</option>
+        <option class="opt_r">1942</option>
+        <option class="opt_b">1943</option>
+        <option class="opt_r">1944</option>
+        <option class="opt_b">1945</option>
+        <option class="opt_r">1946</option>
+        <option class="opt_b">1947</option>
+        <option class="opt_r">1948</option>
+        <option class="opt_b">1949</option>
+        <option class="opt_r">1950</option>
+        <option class="opt_b">1951</option>
+        <option class="opt_r">1952</option>
+        <option class="opt_b">1953</option>
+        <option class="opt_r">1954</option>
+        <option class="opt_b">1955</option>
+        <option class="opt_r">1956</option>
+        <option class="opt_b">1957</option>
+        <option class="opt_r">1958</option>
+        <option class="opt_b">1959</option>
+        <option class="opt_r">1960</option>
+        <option class="opt_b">1961</option>
+        <option class="opt_r">1962</option>
+        <option class="opt_b">1963</option>
+        <option class="opt_r">1964</option>
+        <option class="opt_b">1965</option>
+        <option class="opt_r">1966</option>
+        <option class="opt_b">1967</option>
+        <option class="opt_r">1968</option>
+        <option class="opt_b">1969</option>
+        <option class="opt_r">1970</option>
+        <option class="opt_b">1971</option>
+        <option class="opt_r">1972</option>
+        <option class="opt_b">1973</option>
+        <option class="opt_r">1974</option>
+        <option class="opt_b">1975</option>
+        <option class="opt_r">1976</option>
+        <option class="opt_b">1977</option>
+        <option class="opt_r">1978</option>
+        <option class="opt_b">1979</option>
+        <option class="opt_r">1980</option>
+        <option class="opt_b">1981</option>
+        <option class="opt_r">1982</option>
+        <option class="opt_b">1983</option>
+        <option class="opt_r">1984</option>
+        <option class="opt_b">1985</option>
+        <option class="opt_r">1986</option>
+        <option class="opt_b">1987</option>
+        <option class="opt_r">1988</option>
+        <option class="opt_b">1989</option>
+        <option class="opt_r">1990</option>
+        <option class="opt_b">1991</option>
+        <option class="opt_r">1992</option>
+        <option class="opt_b">1993</option>
+        <option class="opt_r">1994</option>
+        <option class="opt_b">1995</option>
+        <option class="opt_r">1996</option>
+        <option class="opt_b">1997</option>
+        <option class="opt_r">1998</option>
+        <option class="opt_b">1999</option>
+        <option class="opt_r">2000</option>
+        <option class="opt_b">2001</option>
+        <option class="opt_r">2002</option>
+        <option class="opt_b">2003</option>
+        <option class="opt_r">2004</option>
+        <option class="opt_b">2005</option>
+        <option class="opt_r">2006</option>
+        <option class="opt_b">2007</option>
+        <option class="opt_r">2008</option>
+        <option class="opt_b">2009</option>
+        <option class="opt_r">2010</option> 
+        <option class="opt_b">2011</option>
+        <option class="opt_r">2012</option>
+        <option class="opt_b">2013</option>
+        <option class="opt_r" style='font-weight: bold'>2014</option>
+        <option class="opt_b">2015</option>
+      </select>
+     <div class="rad"> 
+     <p><b>Ваш социальный статуc:</b></p>
+        <p><input type="radio" name="a" value="a1">Учащийся</p>
+        <p><input type="radio" name="a" value="a2">Работающий</p>
+        <p><input type="radio" name="a" value="a3">Безработный</p>
+        <p><input type="radio" name="a" value="a4">Пенсионер</p>
+     </div>
+    <div class="checkb">
+     <p><b>Ваши литературные предпочтения:</b></p>
+        <p><input type=checkbox name=m[] value="Художественная">Художественная</p>
+        <p><input type=checkbox name=m[] value="Научная">Научная</p>
+        <p><input type=checkbox name=m[] value="Периодика">Периодика</p>
+        <p><input type=checkbox name=m[] value="Учебная">Учебная</p> 
+     </div>    
+       <p><b>Дополнительно:</b></p>  
+        <textarea 
+            name="comments" 
+            class="gr"
+            onKeyPress="style.backgroundColor='lightgreen';">
+        </textarea>
+               <p><input type="submit" value="Зарегистрировать">
+           <input type="reset" value="Очистить"></p>
+</form>
+
+
+</body>
+</html>
